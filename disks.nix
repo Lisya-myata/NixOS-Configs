@@ -4,7 +4,7 @@
 			disk = {
 				main = {
 					type = "disk";
-					device = "/dev/disk/... change based on your system;
+					device = "/dev/disk/... change based on your system";
 					content = {
 						type = "gpt";
 						partitions = {
