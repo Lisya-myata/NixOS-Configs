@@ -1,9 +1,10 @@
 
-    { ... }:
+	{ ... }:
     
-	{
-	    imports = [ 
-	     ./firefox.nix
-		./firefox_profile_default.nix	
-	    ];
-	}
+		{
+			imports = [ 
+				./firefox.nix
+					./default-profile/firefox_profile_default.nix
+						./userChrome.nix
+			];
+		}

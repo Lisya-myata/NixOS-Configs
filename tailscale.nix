@@ -1,8 +1,10 @@
 
 	{ pkgs, ... }:
-    
+
 		{
 			environment.systemPackages = with pkgs; [
-				sparrow
+				tailscale
+				tailscale-systray
 			];
+			services.tailscale.enable = true;
 		}

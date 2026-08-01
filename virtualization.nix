@@ -1,12 +1,11 @@
 
-    { pkgs, ...}:
+	{ pkgs, ...}:
 	
-	{
-	
-	    environment.systemPackages = with pkgs;[
-		qemu
-		libvirt
-	    ];
+		{
+			environment.systemPackages = with pkgs;[
+				qemu
+				libvirt
+			];
 
-	    programs.virt-manager.enable = true;
-	}
+			programs.virt-manager.enable = true;
+		}

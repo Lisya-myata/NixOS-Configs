@@ -1,11 +1,11 @@
 
-    { pkgs, ... }:
+	{ pkgs, ... }:
 
-	{
-	    environment.systemPackages = with pkgs; [
-		krita
-		drawpile
-		blender
-	    ];
-	}
+		{
+			environment.systemPackages = with pkgs; [
+				krita
+				drawpile
+				blender
+			];
+		}
 

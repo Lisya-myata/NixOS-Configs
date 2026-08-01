@@ -1,9 +1,8 @@
 
-    { pkgs, ... }:
+	{ pkgs, ... }:
 
-    {
-
-	fonts.packages = with pkgs; [
-	    nerd-fonts.fira-mono
-	];
-    }
+		{
+			fonts.packages = with pkgs; [
+				nerd-fonts.fira-mono
+			];
+		}

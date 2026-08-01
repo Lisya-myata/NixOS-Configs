@@ -1,13 +1,11 @@
 
-    { pkgs, ... }:
+	{ pkgs, ... }:
     
-	{
-
-	    environment.systemPackages = with pkgs; [ 
-		obsidian
-		libreoffice-fresh
-		zotero
-		foliate
-	    ];    
-
-	}
+		{
+			environment.systemPackages = with pkgs; [ 
+				obsidian
+				libreoffice-fresh
+				zotero
+				foliate
+			];    
+		}

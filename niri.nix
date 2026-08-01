@@ -1,11 +1,11 @@
 
-    { pkgs, ... }:
+	{ pkgs, ... }:
 
-	{
-	    programs.niri.enable = true;
+		{
+			programs.niri.enable = true;
 
-	    environment.systemPackages = with pkgs;[ 
-		xwayland-satellite 
-		fuzzel
-	    ]; 
-	}
+			environment.systemPackages = with pkgs;[ 
+				xwayland-satellite 
+				fuzzel
+			]; 
+		}

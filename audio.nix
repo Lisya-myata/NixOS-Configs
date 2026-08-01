@@ -1,10 +1,10 @@
 
-    { pkgs, ... }:
+	{ pkgs, ... }:
 
-	{
-	    environment.systemPackages = with pkgs; [
-		audacity
-		audacious
-		openutau
-	    ];
-	}
+		{
+			environment.systemPackages = with pkgs; [
+				audacity
+				audacious
+				openutau
+			];
+		}

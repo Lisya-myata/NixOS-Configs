@@ -1,10 +1,10 @@
 
-    { pkgs, ... }:
+	{ pkgs, ... }:
 
-	{
-	    environment.systemPackages = with pkgs; [
-		keepassxc
-		kdePackages.kleopatra	
-	    ];
-	}
+		{
+			environment.systemPackages = with pkgs; [
+				keepassxc
+				kdePackages.kleopatra	
+			];
+		}
 			

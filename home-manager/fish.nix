@@ -1,11 +1,15 @@
 
-    { ... }:
+	{ ... }:
 	
-	{
-	    programs.fish = {
-	    shellAbbrs = {
-		cd = "z";
-		ls = "eza -l -a";
-	      };
-	    };
-	}
+		{
+			programs.fish = {
+				shellAbbrs = {
+					cd = "z";
+					ls = "eza -l -a";
+					shutdown = "systemctl poweroff";
+					nix-rebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles#nixosvm";
+					nix-update = "sudo nix flake update --flake ~/.dotfiles";
+					nix-garbage-collect = "sudo nix-collect-garbage -d";
+				};
+			};
+		}
