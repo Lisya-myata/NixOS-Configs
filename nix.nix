@@ -14,4 +14,13 @@
 				dates="weekly";
 				options="--delete-older-than 30d";
 			};
+			# Automatic updates
+			system.autoUpgrade = {
+				enable = true;
+				flake = "./flake.nix";
+				flags = [
+				];
+				dates = "3Month 12:00";
+				persistent = true;
+			};
 		}
