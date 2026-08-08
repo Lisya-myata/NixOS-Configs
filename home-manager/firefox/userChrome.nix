@@ -12,5 +12,9 @@
 						{
 							display: none;
 						}
+					#sidebar-container
+						{
+							display: none !important;
+						}
 				'';
 		}
