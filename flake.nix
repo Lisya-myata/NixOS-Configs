@@ -34,7 +34,7 @@
 	    
 			outputs = inputs@{ self, nixpkgs, home-manager, plasma-manager,  lix, lix-module, nur, ... }: {
 				# NOTE: host name goes after the dot in nixosConfigurations.
-				nixosConfigurations.nixosvm = nixpkgs.lib.nixosSystem {
+				nixosConfigurations.v-nixos = nixpkgs.lib.nixosSystem {
 				system = "x86_64-linux";
 					modules = [ 
 						./boot.nix
