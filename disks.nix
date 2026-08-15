@@ -34,7 +34,7 @@
 								priority = 2;
 								name = "swap";
 								# Size uses relative amounts. 8G will partition an 8GB area after the previous partition's end.
-								size = "8G";
+								size = "32G";
 								type = "8200";
 								content = {
 									type = "swap";
