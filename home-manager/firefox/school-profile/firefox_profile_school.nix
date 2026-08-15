@@ -4,9 +4,9 @@
 
 		{
 			programs.firefox.profiles = {
-				Default = {
-					id = 0;
-					isDefault = true;
+				School = {
+					id = 2;
+					isDefault = false;
 						settings = {
 							# Enables restore session
 							"Browser.startup.page" = "3";
@@ -113,110 +113,25 @@
 					# Force's home-manager to overwrite existing configuration for the same reason as search force.
 					containersForce = true;
 					containers = {
-						"Amazon" = {
-							color = "yellow";
-							icon = "cart";
-							id = 12;
-						};
-						"ATprotocol" = {
-							color = "blue";
-							icon = "fingerprint";
-							id = 4;
-						};
-						"Bandcamp" = {
-							color = "turquoise";
-							icon = "cart";
-							id = 14;
-						};
-						"Catbox" = {
-							color = "toolbar";
-							icon = "pet";
-							id = 8;
-						};
-						"Discord" = {
-							color = "blue";
-							icon = "fence";
-							id = 17;
-						};
-						"Facebook" = {
-							color = "blue";
-							icon = "fence";
-							id = 21;
-						};
-						"Gelbooru" = {
-							color = "blue";
-							icon = "circle";
-							id = 9;
-						};
-						"Github" = {
-							color = "blue";
-							icon = "fingerprint";
-							id = 7;
-						};
-						"GOG" = {
-							color = "purple";
-							icon = "cart";
-							id = 15;
-						};
 						"Google" = {
 							color = "blue";
 							icon = "fingerprint";
-							id = 5;
+							id = 3;
 						};
 						"Kagi" = {
 							color = "orange";
 							icon = "pet";
 							id = 1;
 						};
-						"Microsoft" = {
-							color = "blue";
-							icon = "fingerprint";
-							id = 6;
-						};
-						"Patreon" = {
-							color = "orange";
-							icon = "dollar";
-							id = 11;
-						};
-						"Porkbun" = {
-							color = "red";
-							icon = "cart";
-							id = 3;
-						};
 						"Protonmail" = {
 							color = "purple";
 							icon = "briefcase";
 							id = 2;
 						};
-						"Reddit" = {
-							color = "orange";
-							icon = "fence";
-							id = 20;
-						};
-						"Steam" = {
-							color = "blue";
-							icon = "cart";
-							id = 16;
-						};
-						"Throne" = {
-							color = "purple";
-							icon = "cart";
-							id = 13;
-						};
-						"Twitch" = {
-							color = "purple";
-							icon = "fence";
-							id = 18;
-						};
-						"Twitter" = {
-							color = "blue";
-							icon = "fence";
-							id = 19;
-						};
 						"Wikipedia" = {
 							color = "toolbar";
 							icon = "fingerprint";
-							id = 10;
+							id = 4;
 						};
 					};		
 					extensions = {

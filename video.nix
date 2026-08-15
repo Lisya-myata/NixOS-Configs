@@ -5,7 +5,7 @@
 			environment.systemPackages = with pkgs; [
 				haruna
 				obs-studio
-				davinci-resolve
+				# davinci-resolve
 				ffmpeg
 				yt-dlp
 			];

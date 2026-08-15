@@ -10,7 +10,7 @@
 			 ./crypto_currency.nix
 			 ./tailscale.nix
 			 ./virtualization.nix
-			 #./games.nix 
+			 ./games.nix 
 			 ./packages.nix
 			 ./text.nix
 			 ./visual.nix

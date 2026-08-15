@@ -19,6 +19,12 @@
 					url = "github:nix-community/home-manager/master";
 					inputs.nixpkgs.follows = "nixpkgs";
 				};
+
+				plasma-manager = {
+					url = "github:nix-community/plasma-manager";
+					inputs.nixpkgs.follows = "nixpkgs";
+					inputs.home-manager.follows = "home-manager";
+				};
 		
 				nur = {
 					url = "github:nix-community/NUR";
@@ -26,7 +32,7 @@
 				};
 		  };
 	    
-			outputs = inputs@{ self, nixpkgs, lix, lix-module, nur, ... }: {
+			outputs = inputs@{ self, nixpkgs, home-manager, plasma-manager,  lix, lix-module, nur, ... }: {
 				# NOTE: host name goes after the dot in nixosConfigurations.
 				nixosConfigurations.nixosvm = nixpkgs.lib.nixosSystem {
 				system = "x86_64-linux";
@@ -55,6 +61,7 @@
 					    home-manager = {
 								useGlobalPkgs = true;
 								useUserPackages = true;
+								sharedModules = [ plasma-manager.homeModules.plasma-manager ];
 								users.lisyamyata = import ./home-manager/home.nix;
 								backupFileExtension = "home-manager-backup";
 							};

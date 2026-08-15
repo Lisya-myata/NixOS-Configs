@@ -4,9 +4,9 @@
 
 		{
 			programs.firefox.profiles = {
-				Default = {
-					id = 0;
-					isDefault = true;
+				Irl = {
+					id = 1;
+					isDefault = false;
 						settings = {
 							# Enables restore session
 							"Browser.startup.page" = "3";
@@ -113,74 +113,49 @@
 					# Force's home-manager to overwrite existing configuration for the same reason as search force.
 					containersForce = true;
 					containers = {
-						"Amazon" = {
+						"Amazon Private" = {
 							color = "yellow";
 							icon = "cart";
-							id = 12;
+							id = 6;
 						};
-						"ATprotocol" = {
-							color = "blue";
-							icon = "fingerprint";
-							id = 4;
-						};
-						"Bandcamp" = {
-							color = "turquoise";
+						"Amazon Francine" = {
+							color = "yellow";
 							icon = "cart";
-							id = 14;
-						};
-						"Catbox" = {
-							color = "toolbar";
-							icon = "pet";
-							id = 8;
-						};
-						"Discord" = {
-							color = "blue";
-							icon = "fence";
-							id = 17;
-						};
-						"Facebook" = {
-							color = "blue";
-							icon = "fence";
-							id = 21;
-						};
-						"Gelbooru" = {
-							color = "blue";
-							icon = "circle";
-							id = 9;
-						};
-						"Github" = {
-							color = "blue";
-							icon = "fingerprint";
 							id = 7;
 						};
-						"GOG" = {
-							color = "purple";
-							icon = "cart";
-							id = 15;
+						"Democray Now" = {
+							color = "red";
+							icon = "chill";
+							id = 9;
 						};
-						"Google" = {
-							color = "blue";
-							icon = "fingerprint";
+						"Ebay" = {
+							color = "orange";
+							icon = "cart";
 							id = 5;
+						};
+						"Etsy" = {
+							color = "orange";
+							icon = "cart";
+							id = 4;
+						};
+						"Hawaii Public Radio" = {
+							color = "red";
+							icon = "chill";
+							id = 10;
 						};
 						"Kagi" = {
 							color = "orange";
 							icon = "pet";
 							id = 1;
 						};
-						"Microsoft" = {
-							color = "blue";
-							icon = "fingerprint";
-							id = 6;
-						};
-						"Patreon" = {
-							color = "orange";
-							icon = "dollar";
+						"Kauai Now" = {
+							color = "purple";
+							icon = "chill";
 							id = 11;
 						};
-						"Porkbun" = {
-							color = "red";
-							icon = "cart";
+						"Paypal" = {
+							color = "blue";
+							icon = "dollar";
 							id = 3;
 						};
 						"Protonmail" = {
@@ -188,35 +163,10 @@
 							icon = "briefcase";
 							id = 2;
 						};
-						"Reddit" = {
-							color = "orange";
-							icon = "fence";
-							id = 20;
-						};
-						"Steam" = {
-							color = "blue";
-							icon = "cart";
-							id = 16;
-						};
-						"Throne" = {
-							color = "purple";
-							icon = "cart";
-							id = 13;
-						};
-						"Twitch" = {
-							color = "purple";
-							icon = "fence";
-							id = 18;
-						};
-						"Twitter" = {
-							color = "blue";
-							icon = "fence";
-							id = 19;
-						};
-						"Wikipedia" = {
-							color = "toolbar";
-							icon = "fingerprint";
-							id = 10;
+						"Zenni Optical" = {
+							color = "green";
+							icon = "chill";
+							id = 8;
 						};
 					};		
 					extensions = {
